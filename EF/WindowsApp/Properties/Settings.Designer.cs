@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RRHH.Properties
+namespace WindowsApp.Properties
 {
 
 
