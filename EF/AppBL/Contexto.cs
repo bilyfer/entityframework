@@ -18,5 +18,6 @@ namespace AppBL
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Ventas> Ventas { get; set; }
     }
 }
