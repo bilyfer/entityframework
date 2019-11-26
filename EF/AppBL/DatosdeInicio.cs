@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using System.Globalization;
 using System.IO;
 
 namespace AppBL
@@ -15,7 +16,7 @@ namespace AppBL
 
             contexto.Usuarios.Add(usuarioAdmin);
 
-            var archivo = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\100 Sales Records.csv";
+            var archivo = "../../../100 Sales Records.csv";
             using (var reader = new StreamReader(archivo))
             {
                 reader.ReadLine(); // Lee primera fila de encabezados
@@ -31,9 +32,9 @@ namespace AppBL
                         ItemType = values[2].ToString(),
                         SalesChannel = values[3].ToString(),
                         OrderPriority = values[4].ToString(),
-                        OrderDate = DateTime.Parse(values[5].ToString()),
+                        OrderDate = DateTime.Parse(values[5].ToString(), CultureInfo.GetCultureInfo("en")),
                         OrderId = values[6].ToString(),
-                        ShipDate = DateTime.Parse(values[7].ToString()),
+                        ShipDate = DateTime.Parse(values[7].ToString(), CultureInfo.GetCultureInfo("en")),
                         UnitSold = int.Parse(values[8].ToString()),
                         UnitPrice = decimal.Parse(values[9].ToString()),
                         UnitCost = decimal.Parse(values[10].ToString()),

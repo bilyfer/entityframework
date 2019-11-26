@@ -25,5 +25,13 @@ namespace WindowsApp
         {
             Login();
         }
+
+        private void reporteDeVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new formVentas();
+            form.MdiParent = this;
+
+            form.Show();
+        }
     }
 }

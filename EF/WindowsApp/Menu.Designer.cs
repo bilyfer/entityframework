@@ -31,12 +31,15 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ventasToolStripMenuItem,
             this.seguridadToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -55,9 +58,24 @@
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // ventasToolStripMenuItem
+            // 
+            this.ventasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteDeVentasToolStripMenuItem});
+            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ventasToolStripMenuItem.Text = "Ventas";
+            // 
+            // reporteDeVentasToolStripMenuItem
+            // 
+            this.reporteDeVentasToolStripMenuItem.Name = "reporteDeVentasToolStripMenuItem";
+            this.reporteDeVentasToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.reporteDeVentasToolStripMenuItem.Text = "Reporte de Ventas";
+            this.reporteDeVentasToolStripMenuItem.Click += new System.EventHandler(this.reporteDeVentasToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -83,5 +101,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeVentasToolStripMenuItem;
     }
 }
